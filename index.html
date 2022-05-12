@@ -6,11 +6,18 @@
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 </head>
 
 <body>
-  Hello world
-  <script src="script.js"></script>
+    Hello world! <br>
+    This is the current date and time, as computed by Python:
+    <py-script>
+from datetime import datetime
+now = datetime.now()
+now.strftime("%m/%d/%Y, %H:%M:%S")
+    </py-script>
 </body>
 
 </html>
